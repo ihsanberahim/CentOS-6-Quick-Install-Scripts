@@ -7,6 +7,8 @@ echo '------------------------'
 read -p "MySQL Password: " mysqlPassword
 read -p "Retype password: " mysqlPasswordRetype
 
+yum update -y
+yum upgrade -y
 yum install -y httpd php mysql mysql-server
 
 chkconfig mysql-server on
