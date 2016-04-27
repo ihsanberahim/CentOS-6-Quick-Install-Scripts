@@ -7,9 +7,12 @@ echo '------------------------'
 read -p "MySQL Password: " mysqlPassword
 read -p "Retype password: " mysqlPasswordRetype
 
+rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+
 yum update -y
 yum upgrade -y
-yum install -y httpd php mysql mysql-server
+yum install -y httpd php mysql mysql-server yum-plugin-replace
+
 
 chkconfig mysql-server on
 chkconfig httpd on
