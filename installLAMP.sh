@@ -13,7 +13,7 @@ yum update -y
 yum upgrade -y
 
 yum install -y httpd php56w mysql55w mysql55w-server
-yum install -y php56w-intl php56w-mcrypt php56w-mbstring php56w-xml php56w-soap
+yum install -y php56w-intl php56w-mcrypt php56w-mbstring php56w-xml php56w-soap php56w-gd
 
 
 chkconfig mysqld on
